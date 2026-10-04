@@ -1,8 +1,10 @@
 streamlit
-langchain
-wikipedia
-langchain-community
-langchain-openai
-langchain-groq
+groq
 python-dotenv
-pydantic
+chromadb
+langchain
+langchain-chroma
+langchain-huggingface
+sentence-transformers
+beautifulsoup4
+requests
