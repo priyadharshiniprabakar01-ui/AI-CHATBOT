@@ -49,19 +49,23 @@ st.markdown(
     """
     <style>
 
+    /* Main dark background */
     .stApp {
-        background-color: #f6f8fc;
+        background-color: #0f172a;
+        color: white;
     }
 
+    /* Main content */
     .main .block-container {
         max-width: 1100px;
         padding-top: 30px;
         padding-bottom: 100px;
     }
 
+    /* Header */
     .src-title {
         text-align: center;
-        color: #173b73;
+        color: white;
         font-size: 38px;
         font-weight: 700;
         margin-bottom: 5px;
@@ -69,46 +73,108 @@ st.markdown(
 
     .src-subtitle {
         text-align: center;
-        color: #697386;
+        color: #cbd5e1;
         font-size: 16px;
         margin-bottom: 30px;
     }
 
+    /* Welcome card */
     .welcome-card {
-        background-color: white;
+        background-color: #1e293b;
         padding: 25px;
         border-radius: 20px;
-        border: 1px solid #e4e7ee;
+        border: 1px solid #334155;
         margin-bottom: 25px;
     }
 
     .welcome-title {
-        color: #172033;
+        color: white;
         font-size: 22px;
         font-weight: 700;
     }
 
     .welcome-text {
-        color: #697386;
+        color: #e2e8f0;
         font-size: 15px;
         margin-top: 8px;
         line-height: 1.6;
     }
 
+    /* Normal Streamlit text */
+    .stMarkdown,
+    .stText,
+    p,
+    li {
+        color: white;
+    }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #111827;
+    }
+
+    section[data-testid="stSidebar"] * {
+        color: white !important;
+    }
+
+    /* Buttons */
+    .stButton > button {
+        background-color: #1e293b;
+        color: white;
+        border: 1px solid #475569;
+        border-radius: 10px;
+    }
+
+    .stButton > button:hover {
+        background-color: #334155;
+        color: white;
+        border-color: #64748b;
+    }
+
+    /* Chat input */
+    .stChatInput {
+        background-color: #1e293b;
+    }
+
+    .stChatInput textarea {
+        color: white !important;
+        background-color: #1e293b !important;
+    }
+
+    .stChatInput textarea::placeholder {
+        color: #94a3b8 !important;
+    }
+
+    /* Chat messages */
+    [data-testid="stChatMessage"] {
+        background-color: #111827;
+        border-radius: 12px;
+    }
+
+    /* Expanders */
+    .streamlit-expanderHeader {
+        color: white !important;
+        background-color: #1e293b;
+    }
+
+    /* Footer */
     .footer {
         text-align: center;
-        color: #9aa3b2;
+        color: #94a3b8;
         font-size: 12px;
         margin-top: 40px;
         padding: 20px;
+    }
+
+    /* Divider */
+    hr {
+        border-color: #334155;
     }
 
     </style>
     """,
     unsafe_allow_html=True
 )
-
-
 # =========================================================
 # SIDEBAR
 # =========================================================
